@@ -10,8 +10,8 @@ int brute(vector<int>&nums){
         for(int j = i ; j < nums.size() ; j++){
             for(int k = i ; k <= j ; k++){
                 sum+=nums[i];
-                if(sum > maxSum){
-                    maxSum = sum;
+                if(sum > maxSym){
+                    maxSym = sum;
                 }
             }
         }

@@ -60,6 +60,5 @@ vector<pair<int, int>> findSumOptimized(Node* head, int sum) {
             right = right->prev; // Need smaller sum
         }
     }
-    
     return ans;
 }

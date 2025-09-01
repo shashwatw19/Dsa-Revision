@@ -38,10 +38,11 @@ string removeOuterParentheses(string s) {
             open++; 
         }
         else{
+            open--;
             if(open > 0){
                 ans+=ch;
             }
-            open--;
+            
         }
     }
     return ans;

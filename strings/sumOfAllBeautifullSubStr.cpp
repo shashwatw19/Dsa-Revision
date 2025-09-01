@@ -41,6 +41,3 @@ public:
 
     }
 };
-int main(){
-
-}

@@ -10,8 +10,8 @@
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-//time complexity O(n*n*n)
 
+//time complexity O(n*n*n)
 bool isPalindrome(string &s , int start , int end){
         while(start<=end){
             if(s[start]!=s[end])

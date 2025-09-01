@@ -40,8 +40,10 @@ public:
                 temp.push_back(s[left]);
             left++;
         }
+
         //reverse the clean string
         reverse(temp.begin() , temp.end());
+        
         //now reverse the each word in the string
         int start = 0;
         for(int end = 0 ; end <= temp.size() ; end++){

@@ -44,13 +44,13 @@ ListNode* merge(ListNode* left , ListNode* right){
     while(left && right){
         if(left->val < right->val){
             temp->next = left;
-            temp = left;
+           
             left = left->next;
         }else{
             temp->next = right;
-            temp = right;
             right = right->next;
         }
+        temp = temp->next;
     }
     
    if(left){

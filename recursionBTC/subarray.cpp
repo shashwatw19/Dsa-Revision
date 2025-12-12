@@ -12,7 +12,7 @@ void print_helper(vector<int>&nums , vector<int>&output , int index){
     }
 
     output.push_back(nums[index]);
-    print_helper(nums , output , index+1);
+    print_helper(nums , output , index+1); 
 
     output.pop_back();
     print_helper(nums , output , index+1);

@@ -44,29 +44,29 @@ int brute(vector<int>arr , int k){
 }
 //time complexity O(2n)
 //space complexity O(1)
-int better(vector<int>fruits , int k){
-    unordered_map<int ,int>mpp;
-    int r = 0;
-    int l = 0;
-    int maxLength = 0;
-    while(r < fruits.size()){
-        mpp[fruits[r]]++;
-        while(mpp.size() > 2){
-            mpp[fruits[l]]--;
-            if(mpp[fruits[l]] == 0){
-                mpp.erase(fruits[l]);
+    int better(vector<int>fruits , int k){
+        unordered_map<int ,int>mpp;
+        int r = 0;
+        int l = 0;
+        int maxLength = 0;
+        while(r < fruits.size()){
+            mpp[fruits[r]]++;
+            while(mpp.size() > 2){
+                mpp[fruits[l]]--;
+                if(mpp[fruits[l]] == 0){
+                    mpp.erase(fruits[l]);
+                }
+                l++;
             }
-            l++;
+            if(mpp.size() <=2){
+                int length = r - l + 1;
+                maxLength = max(maxLength ,length);
+            }
+            r++;
+                
         }
-        if(mpp.size() <=2){
-            int length = r - l + 1;
-            maxLength = max(maxLength ,length);
-        }
-        r++;
-            
+            return maxLength;
     }
-        return maxLength;
-}
 //time complexity O(N)
 //space complexity O(1)
 int optimal(vector<int>fruits , int k){

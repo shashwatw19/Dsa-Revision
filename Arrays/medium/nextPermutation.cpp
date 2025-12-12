@@ -48,7 +48,7 @@ using namespace std;
             return reverse(nums.begin() , nums.end());
         }
         for(int i = n-1 ; i >= 0 ; i--){
-            if(nums[i] > nums[index]){\
+            if(nums[i] > nums[index]){
                 swap(nums[index] , nums[i]);
                 break;
             }

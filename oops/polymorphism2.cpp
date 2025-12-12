@@ -28,7 +28,6 @@ int main(){
     Animal *a = new Dog(); //upcasting..
     a->sound();
 
-
 // without virtual -> left side function will be called
     // Parent *p = new Child();
     // Parent *p = new Parent();
